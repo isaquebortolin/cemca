@@ -1,0 +1,72 @@
+html, body{
+  margin:0;
+  padding:0;
+
+  background-image: url("fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+
+.titulo{
+  text-align:center;
+  font-size:70px;
+  color:black;
+  -webkit-text-stroke:1px gold;
+  margin-top:20px;
+}
+.conteudo{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  padding:40px;
+}
+
+.texto{
+  width:55%;
+}
+
+.paragrafo{
+  color:white;
+  font-size:35px;
+  margin-bottom:20px;
+}
+
+.imagem img{
+  width:750px;
+}
+
+@media (max-width:768px){
+
+  .conteudo{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .texto{
+    width:90%;
+  }
+
+  .paragrafo{
+    font-size:22px;
+  }
+
+  .imagem img{
+    width:90%;
+    margin-top:30px;
+  }
+
+  .titulo{
+    font-size:40px;
+  }
+
+}
+
+
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,120 @@
+.paragrafo{
+  
+text-align:center;
+  
+  text-align:top;
+
+}
+
+body{
+
+  margin:0;
+
+  background:black;
+
+  color:white;
+
+  font-family:Arial;
+
+  overflow-x:hidden;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  min-height:100vh;
+}
+
+/* container */
+
+div{
+
+  position:relative;
+
+  z-index:2;
+}
+
+
+
+
+/* vídeo */
+
+video{
+
+  width:70%;
+
+  border-radius:20px;
+
+  border:4px solid gold;
+
+  box-shadow:
+  0 0 20px gold,
+  0 0 50px orange;
+}
+
+
+
+
+/* decoração esquerda */
+
+body::before{
+
+  content:"♠";
+
+  position:fixed;
+
+  left:40px;
+  top:50%;
+
+  transform:translateY(-50%);
+
+  font-size:120px;
+
+  color:rgba(255,215,0,0.15);
+
+  text-shadow:
+  0 0 20px gold;
+}
+
+
+
+
+/* decoração direita */
+
+body::after{
+
+  content:"♦";
+
+  position:fixed;
+
+  right:40px;
+  top:50%;
+
+  transform:translateY(-50%);
+
+  font-size:120px;
+
+  color:rgba(255,0,0,0.15);
+
+  text-shadow:
+  0 0 20px red;
+}
+
+
+
+
+/* celular */
+
+@media (max-width:768px){
+
+  video{
+    width:95%;
+  }
+
+  body::before,
+  body::after{
+    display:none;
+  }
+}

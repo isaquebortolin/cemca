@@ -1,0 +1,73 @@
+body{
+  margin:0;
+  background: radial-gradient(circle, #111, #000);
+  color:white;
+  text-align:center;
+  font-family: Arial;
+}
+
+.titulo{
+  font-size:50px;
+  margin-top:20px;
+  color:gold;
+  text-shadow:
+    0 0 10px gold,
+    0 0 20px orange;
+}
+
+button{
+  font-size:22px;
+  padding:12px 30px;
+  margin:20px;
+  background: linear-gradient(45deg, red, darkred);
+  color:white;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  box-shadow:0 0 10px red;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 20px red;
+}
+
+#resultado{
+  font-size:26px;
+  margin-top:10px;
+}
+
+@media (max-width:768px){
+  .titulo{ font-size:32px; }
+  button{ font-size:18px; }
+}
+
+@media (max-width:768px){
+
+  canvas{
+    width:90% !important;
+    height:auto !important;
+  }
+
+  .titulo{
+    font-size:32px;
+  }
+
+  button{
+    font-size:18px;
+    padding:10px 20px;
+  }
+
+  #resultado{
+    font-size:20px;
+  }
+
+}
+
+.explicacao{
+  width:70%;
+  margin:30px auto;
+  font-size:22px;
+  line-height:1.6;
+}
